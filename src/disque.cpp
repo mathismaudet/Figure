@@ -3,12 +3,12 @@
 
 using namespace std;
 
-	float Disque::calculSurface() // Calcule la surface du disque
+	float Disque::calculSurface(float a) // Calcule la surface du disque
 {
 	return 3 * (rayon * rayon);
 }
 
-	int Disque::calculPerimetre() // Calcule le perimetre du disque
+	float Disque::calculPerimetre(float a) // Calcule le perimetre du disque
 {
 	return 2 * 3 * rayon;
 }

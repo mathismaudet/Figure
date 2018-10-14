@@ -3,13 +3,13 @@
 
 using namespace std;
 
-	float Rectangle::calculSurface() // Va calculer la surface du rectangle
+	float Rectangle::calculSurface(float a, float b) // Va calculer la surface du rectangle
 {
 
 	return longueur * largeur;
 }
 
-	int Rectangle::calculPerimetre() // Va calculer le perimetre du rectangle
+	float Rectangle::calculPerimetre(float a, float b) // Va calculer le perimetre du rectangle
 {
 
 	return longueur * 2 + largeur * 2;

@@ -1,15 +1,29 @@
+/*!\file triangle.h
+*\définition de la classe triangle
+*\Mathis Maudet
+*version 1.0
+*/
+
+#pragma once
 #include "figure.h"
+
+/*!\classe qui calcule surface et perimetre d'un triangle
+*/
 
 class Triangle : public Figure
 {
 
 public:
-	int cote1;
-	int cote2;
-	int cote3;
-	int hauteur;
+	float cote1;
+	float cote2;
+	float cote3;
+	float hauteur;
 
-	int calculPerimetre();
-	float calculSurface();
+	/*!param calculPerimetre ici va calculer le perimetre du triangle
+	*/
+	float calculPerimetre(float a, float b, float c);
+	/*!param calculSurface ici va calculer la surface du triangle
+	*/
+	float calculSurface(float a, float d);
 
 };
